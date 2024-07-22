@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery</title>
+
+    <script type="text/javascript" src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    ></script>
+
+    <script type="text/javascript" src="/tailwinConfig.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto Condensed"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="bg-header-1 h-96 bg-top relative">
+      <div class="flex justify-center p-3 items-center relative">
+        <img src="./assets/logo.svg" alt="logo" class="relative" />
+        <i
+          id="openMenu"
+          class="fa-solid fa-bars text-xl text-white absolute top-3 right-4 cursor-pointer z-20"
+        ></i>
+      </div>
+      <nav
+        id="menuMobile"
+        class="z-[19] hidden fixed right-0 top-0 bg-orange_100 w-1/2 h-96 p-6 rounded-tl-lg rounded-b-lg duration-500"
+      >
+        <div class="flex justify-end">
+          <i
+            id="closeMenu"
+            class="fa-solid fa-xmark text-xl text-white hover:text-brown_300 active:text-brown_300 cursor-pointer"
+          ></i>
+        </div>
+        <div class="flex flex-col gap-y-3">
+          <a
+            href="#about"
+            class="text-sm block text-white font-medium hover:text-brown_300 active:text-brown_300 cursor-pointer"
+            >ABOUT</a
+          >
+          <a
+            href="#menu"
+            class="text-sm block text-white font-medium hover:text-brown_300 active:text-brown_300 cursor-pointer"
+            >MENU</a
+          >
+          <a
+            href="#blog"
+            class="text-sm block text-white font-medium hover:text-brown_300 active:text-brown_300 cursor-pointer"
+            >BLOG</a
+          >
+          <a
+            href="#contact"
+            class="text-sm block text-white font-medium hover:text-brown_300 active:text-brown_300 cursor-pointer"
+            >CONTACT</a
+          >
+        </div>
+      </nav>
+      <section class="relative flex justify-between p-3 z-0">
+        <div class="mr-3 w-2/5">
+          <h2 class="text-3xl text-white font-bold">Freshly Baked Goodness</h2>
+        </div>
+        <div class="w-full overflow-hidden">
+          <div
+            class="owl-carousel list-category owl-theme w-full overflow-hidden"
+          >
+            <div class="w-full relative">
+              <img
+                class="w-full object-contain overflow-hidden"
+                src="./assets/banner_1.png"
+                alt="banner_1"
+              />
+              <div class="bg-orange_100 w-full py-3 flex justify-center">
+                <h6 class="text-base text-orange_50">Bread and Rolls</h6>
+              </div>
+            </div>
+            <div class="w-full">
+              <img
+                class="w-full object-contain"
+                src="./assets/banner_2.png"
+                alt="banner_2"
+              />
+              <div class="bg-orange_100 w-full py-3 flex justify-center">
+                <h6 class="text-base text-orange_50">Pastries and Breakfast</h6>
+              </div>
+            </div>
+            <div class="w-full">
+              <img
+                class="w-full object-contain"
+                src="./assets/banner_3.png"
+                alt="banner_3"
+              />
+              <div class="bg-orange_100 w-full py-3 flex justify-center">
+                <h6 class="text-base text-orange_50">Cakes and Cupcakes</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <body>
+      <section id="about">
+        <div class="bg-brown_300 p-3 grid grid-cols-1">
+          <div class="col-span-1 bg-orange_100 rounded p-3 w-1/2">
+            <h4 class="text-lg text-white font-bold">Free Delivery</h4>
+            <p class="text-base text-white mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipi elit. ipsum dolor
+              sit amet.
+            </p>
+          </div>
+          <div class="col-span-1 w-full flex justify-end">
+            <div class="bg-orange_500 w-1/2 rounded p-3">
+              <h4 class="text-lg text-white font-bold">100% secure payment</h4>
+              <p class="text-base text-white mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipi elit. ipsum dolor
+                sit amet.
+              </p>
+            </div>
+          </div>
+          <div class="col-span-1 bg-orange_100 w-1/2 rounded p-3">
+            <h4 class="text-lg text-white font-bold">Quality guarantee</h4>
+            <p class="text-base text-white mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipi elit. ipsum dolor
+              sit amet.
+            </p>
+          </div>
+          <div class="col-span-1 w-full flex justify-end">
+            <div class="bg-orange_500 w-1/2 rounded p-3">
+              <h4 class="text-lg text-white font-bold">Guaranteed savings</h4>
+              <p class="text-base text-white mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipi elit. ipsum dolor
+                sit amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="menu" class="bg-orange_50">
+        <div class="w-full overflow-hidden p-3">
+          <div class="owl-carousel list-menu owl-theme w-full overflow-hidden">
+            <div class="w-full relative">
+              <h6 class="text-lg text-brown_300 font-medium">01. Pizzas</h6>
+              <img
+                class="w-full object-fill overflow-hidden mt-2 h-[150px]"
+                src="./assets/menu_1.png"
+                alt="menu_1.png"
+              />
+            </div>
+            <div class="w-full mt-2">
+              <h6 class="text-lg text-brown_300 font-medium">02. Bakery</h6>
+
+              <img
+                class="w-full object-fill mt-2 h-[150px]"
+                src="./assets/menu_2.png"
+                alt="menu_2.png"
+              />
+            </div>
+            <div class="w-full">
+              <h6 class="text-lg text-brown_300 font-medium">03. Cakes</h6>
+
+              <img
+                class="w-full object-fill mt-2 h-[150px]"
+                src="./assets/menu_3.png"
+                alt="menu_3.png"
+              />
+            </div>
+            <div class="w-full mt-2">
+              <h6 class="text-lg text-brown_300 font-medium">04. Pastries</h6>
+
+              <img
+                class="w-full object-fill mt-2 h-[150px]"
+                src="./assets/menu_4.png"
+                alt="menu_4.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="p-3 relative">
+            <div class="w-3/5 z-0">
+                <img class="w-full object-contain" src="/assets/menu_detail_1.png" alt="menu_detail_1" />
+            </div>
+            <div class="absolute right-0 w-1/2 ">
+                <h2>exceptional quality</h2>
+                <div>
+                    <p>Our passion for baking shines through in every creation we make. Using only the finest ingredients and time-honored techniques, we craft each treat with love and care, ensuring that every bite is a moment of pure joy.</p>
+                    <button>Read more</button>
+                </div>
+            </div>
+
+        </div>
+      </section>
+    </body>
+  </body>
+</html>
